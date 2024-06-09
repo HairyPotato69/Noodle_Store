@@ -1,154 +1,229 @@
 <!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8"/>
-    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Noodle Store</title>
-    <!-- Reset -->
-    <link rel="stylesheet" href="../css/normal.css"/>
-    <link rel="stylesheet" href="../css/index.css"/>
-    <!-- icon -->
-    <link rel="icon" sizes="16x16" href="../icons/ramen_icon.svg"/>
-</html>
-<body>
-    <!-- This is the area that immediately shows up on the screen under your logo and menu -->
-    <section id="hero">
-        <!-- This will contain things inside of the hero -->
-        <div class="container">
-            <video 
-                autoplay
-                muted
-                loop>
-                <source src="videos/video-1@c.mp4" type="video/mp4"/>
-            </video> 
-            <header>
-                <a href="index.html" style="filter: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);"><img src = "../icons/ramen_icon.svg"></a>
-                <nav>
-                    <ul>
-                        <li><a href = "index.html"> Home </a></li>
-                        <li><a id ="anchor-about" href = "#"> About </a></li>
-                        <li><a href = "#"> Product </a></li>
-                        <li><a href = "#"> Contact </a></li>
-                        <li><a target="_blank" class="has_external_links" href = "https://github.com/HairyPotato69">Github</a></li>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta = http-equiv="X-UA-Compatible" content = "IE=edge"/>
+        <meta name = "viewport" content="width=device-width, initial-scale= 1.0"/>
+        <title>K.S Noodle Store</title>
+        <link rel = "stylesheet" href = "css/homepage.css"/>
+        <link rel = "stylesheet" href = "css/mediaqueries.css"/>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+    </head>
+    <body>
+        <nav id = "desktop-nav">
+            <div class = "logo"> K.S. </div> <!-- Add logo with :before -->
+            <div class = "nav-links-container">
+                <ul class = "nav-links">
+                    <li><a href = "#home">Home</a></li>
+                    <li><a href = "#product">Product</a></li>
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#contact">Contact us</a></li>
+                </ul>
+                <button type = "button" class = "button-1" onclick ="location.href = '#product'">Buy Now</button>
+            </div>
+        </nav>
+        <section id = "hero">
+            <div class = "section-text-container">
+                <div class = "section-text">
+                    <h1><span class = "highlight">Experience</span> the <br>
+                        <span class = "highlight">Magic</span> of <br>
+                        <span class = "highlight">Authentic </span> Noodles
+                    </h1>
+                    <p class = "text-p1">Choose from a wide variety of noodles</p>
+                    <button type ="button" class = "button-1" onclick= "location.href = '#product'">Buy Now</button>
+                </div>
+            </div>  
+        </section>
+        <section id = "about">
+            <p class = "text-p1">Get to know</p>
+            <h1 class = "title">About us</h1>
+            <div class = "section-container">
+                <div class = "section-text-container">
+                    <div class = "section-text">
+                        <h1>About us</h1>
+                        <h2>Welcome to <span class = "highlight-2">K.S. Noodle Store</span></h2>
+                        <p class = "text-p1">At K.S. Noodle Store, we are passionate about bringing you the freshest and most authentic noodles and ingredients. 
+                        Founded in [Year], our journey began with a love for traditional Asian cuisine and a desire to share it with the world.</p>
+                    </div>
+                </div>
+                <div class = "image-container">
+                    <img class = "front-image" src="images/start_menu_wallpaper.png" />
+                    <img class = "back-image" src="images/bonk.jpg"/>
+                </div>
+            </div> 
+            <img src = "assets/chevrons-down.svg" 
+            alt = "Down arrow" 
+            class = "icon arrow"
+            onclick="location.href='#reason'"> 
+        </section>
+        <section id = "reason">
+            <h1 class = "title">Why Choose Us?</h1>
+            <p class = "text-p1"></p>
+            <div class = "section-container">
+                <div class = "reason-container">
+                    <div class = "reason-card">
+                        <div class = "face face1">
+                            <div class = "reason-content">
+                                <div class = "reason-img">
+                                    <img src = "assets/star.svg" alt ="quality" class = "icon">
+                                </div>
+                                <h3>Quality</h3>
+                            </div>
+                        </div>
+                        <div class = "face face2">
+                            <div class = "reason-content">
+                                <p>Sourced from the finest ingredients for the <span class = "highlight">highest standards.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "reason-card">
+                        <div class = "face face1">
+                            <div class = "reason-content">
+                                <div class = "reason-img">
+                                    <img src = "assets/shield-check.svg" alt ="quality" class = "icon">
+                                </div>
+                                <h3>Authentic</h3>
+                            </div>
+                        </div>
+                        <div class = "face face2">
+                            <div class = "reason-content">
+                                <p><span class = "highlight">Traditional</span> recipes, true <span class = "highlight">flavours.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "reason-card">
+                        <div class = "face face1">
+                            <div class = "reason-content">
+                                <div class = "reason-img">
+                                    <img src = "assets/clock.svg" alt ="quality" class = "icon">
+                                </div>
+                                <h3>Convenient</h3>
+                            </div>
+                        </div>
+                        <div class = "face face2">
+                            <div class = "reason-content">
+                                <p>Ready in minues, <span class = "highlight">hassle-free.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "reason-card">
+                        <div class = "face face1">
+                            <div class = "reason-content">
+                                <div class = "reason-img">
+                                    <img src = "assets/leaf.svg" alt ="quality" class = "icon">
+                                </div>
+                                <h3>Freshness</h3>
+                            </div>
+                        </div>
+                        <div class = "face face2">
+                            <div class = "reason-content">
+                                <p>Sourced from the finest ingredients for the <span class = "highlight">highest standards.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "reason-card">
+                        <div class = "face face1">
+                            <div class = "reason-content">
+                                <div class = "reason-img">
+                                    <img src = "assets/recycle.svg" alt ="quality" class = "icon">
+                                </div>
+                                <h3>Sustainable</h3>
+                            </div>
+                        </div>
+                        <div class = "face face2">
+                            <div class = "reason-content">
+                                <p><span class = "highlight">Traditional</span> recipes, true <span class = "highlight">flavours.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "reason-card">
+                        <div class = "face face1">
+                            <div class = "reason-content">
+                                <div class = "reason-img">
+                                    <img src = "assets/handshake.svg" alt ="quality" class = "icon">
+                                </div>
+                                <h3>Customer Satisfaction</h3>
+                            </div>
+                        </div>
+                        <div class = "face face2">
+                            <div class = "reason-content">
+                                <p>Ready in minues, <span class = "highlight">hassle-free.</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src = "assets/chevrons-down.svg" 
+            alt = "Down arrow" 
+            class = "icon arrow"
+            onclick="location.href='#product'"> 
+        </section>
+        <section id = "product">
+            <h1 class = "title">Browse Our Products</h1>
+            <div class = "section-container">
+
+                <div class = "product-list">
+                    
+                    <div class = "product-card">
+                        <img src ="images/bihun.jpg" alt = "noodle" class = "product-img" />
+                        <div class = "product-desc">
+                            <p class = "product-small-title">Noodle</p>
+                            <h3 class = "product-name">Vermicelli</h3>
+                            <p class = "price">12</p>
+                        </div>
+                    </div>
+
+                    <div class = "product-card">
+                        <img src ="images/green-noodle.jpg" alt = "noodle" class = "product-img" />
+                        <div class = "product-desc">
+                            <p class = "product-small-title">Flat Flour Noodle</p>
+                            <h3 class = "product-name">Spinach Noodle</h3>
+                            <p class = "price">12</p>
+                        </div>
+                    </div>
+
+                    <div class = "product-card">
+                        <img src ="images/orange-noodle.jpg" alt = "noodle" class = "product-img" />
+                        <div class = "product-desc">
+                            <p class = "product-small-title">Flat Flour Noodle</p>
+                            <h3 class = "product-name">Pumpkin Noodle</h3>
+                            <p class = "price">12</p>
+                        </div>
+                    </div>
+                    
+                    <div class = "product-card">
+                        <img src ="images/purple-noodle.jpg" alt = "noodle" class = "product-img" />
+                        <div class = "product-desc">
+                            <p class = "product-small-title">Flat Flour Noodle</p>
+                            <h3 class = "product-name">Beet Root Noodle</h3>
+                            <p class = "price">12</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <nav id = "desktop-nav">
+                <div class = "logo"> K.S. </div> <!-- Add logo with :before -->
+                <div class = "nav-links-container">
+                    <ul class = "nav-links">
+                        <li><a href = "#home">Home</a></li>
+                        <li><a href = "#product">Product</a></li>
+                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#contact">Contact us</a></li>
                     </ul>
-                </nav>
-            </header>
-            <h1>
-                Noodles that you can <span style="color:blanchedalmond">slurp</span> for days
-            </h1>
-        </div>
-    </section>
-    <section id ="product-showcase">
-        <header>
-            <p style="color:red">Attractive texts</p>
-            <h1>
-                Products
-            </h1>
-            <p>
-                description about product
-            </p>
-        </header>
-
-        <ul class="gallery">
-            <li>
-                <figure>
-                    <img src="images/green-noodle.png">
-                    <figcaption>
-
-                        <main>
-                            <h3>Product A</h3>
-                            <p>Description about product A</p>
-                            <p>More description about product A</p> 
-                        </main>
-                        
-                        <footer>
-                            <div>
-                                <p class = "small">Price:</p>
-                                <p class = "price">$123456</p>
-                            </div>
-
-                            <img src="Icons/pay.svg" alt="Icon" style="filter: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);width: 48px; height: 48px;"/>
-                            <!-- img -->
-                        </footer>
-
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="images/pumpkin-noodle.png">
-                    <figcaption>
-
-                        <main>
-                            <h3>Product A</h3>
-                            <p>Description about product A</p>
-                            <p>More description about product A</p> 
-                        </main>
-                        
-                        <footer>
-                            <div>
-                                <p class = "small">Price:</p>
-                                <p class = "price">$123456</p>
-                            </div>
-
-                            <img src="Icons/pay.svg" alt="Icon" style="filter: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);width: 48px; height: 48px;"/>
-                            <!-- img -->
-                        </footer>
-
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="images/purple-noodle.png">
-                    <figcaption>
-
-                        <main>
-                            <h3>Product A</h3>
-                            <p>Description about product A</p>
-                            <p>More description about product A</p> 
-                        </main>
-                        
-                        <footer>
-                            <div>
-                                <p class = "small">Price:</p>
-                                <p class = "price">$123456</p>
-                            </div>
-
-                            <img src="Icons/pay.svg" alt="Icon" style="filter: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);width: 48px; height: 48px;"/>
-                            <!-- img -->
-                        </footer>
-
-                    </figcaption>
-                </figure>
-            </li>
-            <li>
-                <figure>
-                    <img src="images/red-noodle.png">
-                    <figcaption>
-
-                        <main>
-                            <h3>Product A</h3>
-                            <p>Description about product A</p>
-                            <p>More description about product A</p> 
-                        </main>
-                        
-                        <footer>
-                            <div>
-                                <p class = "small">Price:</p>
-                                <p class = "price">$123456</p>
-                            </div>
-
-                            <img src="Icons/pay.svg" alt="Icon" style="filter: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);width: 48px; height: 48px;"/>
-                            <!-- img -->
-                        </footer>
-
-                    </figcaption>
-                </figure>
-            </li>
-        </ul>
-    </section>
-
-    <footer>
-        <p>hello</p>
-    </footer>
-</body>
+                </div>
+            </nav>
+            <div class = "footer-socials">
+                <p>Copyright &#169; 2024 Jimmy Ding. All Rights Reserved.</p>
+                <ul class = "social-list">
+                    <li><img src = "assets/facebook.svg" alt = "facebook" class = "icon" onclick="location.href= 'https://www.facebook.com/kssitiawanspecialities'"></a></li>
+                    <li><img src = "assets/instagram.svg" alt = "instagram" class = "icon" onclick="location.href= 'https://www.instagram.com/kssitiawanspecialities/'"></li>
+                </ul>
+            </div>
+        </footer>
+    </body> 
+</html>
