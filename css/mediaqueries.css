@@ -244,7 +244,8 @@
         grid-template-columns: 1fr;
     }
 }
-/* @media screen and (max-width: 400px){
+
+@media screen and (max-width: 300px){
     section, .section-container{
         height: fit-content;
     }
@@ -319,4 +320,4 @@
         display: grid;
         grid-template-columns: 1fr;
     }
-} */
+}
